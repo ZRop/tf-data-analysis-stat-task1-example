@@ -8,4 +8,5 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return np.log(x).mean() # Ваш ответ
+    x_2 = [i**2 for i in x]
+    return -np.log(sum(x_2))/2 + 2*np.log(sum(x)) - 3*np.log(len(x))/2 # Ваш ответ
